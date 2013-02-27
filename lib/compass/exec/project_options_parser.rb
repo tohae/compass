@@ -69,6 +69,10 @@ module Compass::Exec::ProjectOptionsParser
     opts.on('--generated-images-path GENERATED_IMAGES_PATH', 'The path where you generate your images') do |generated_images_path|
       self.options[:generated_images_path] = generated_images_path
     end
+
+    opts.on('--http-generated-images-path', 'HTTP_GENERATED_IMAGES_PATH', 'The http path where you generate your image') do |http_generated_images_path|
+      self.options[:http_generated_images_path] = http_generated_images_path
+    end
   end
 
 end
